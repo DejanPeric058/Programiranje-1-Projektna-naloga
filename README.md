@@ -16,5 +16,5 @@ Na podlagi teh podatkov nameravam preveriti:
 * Kakšen je najpogostejši tip delovnika?
 * Katera vrsta del v določenih regijah prevladujejo?
 
-Zaradi omejitve strani, da lahko pregledam samo 30 podrobnosti oglasov, jih bom zajemal do decembra, zaenkrat pa mi je uspelo zajeti 56 oglasov. 
+Zaradi omejitve strani, da lahko pregledam samo 30 podrobnosti oglasov, jih bom zajemal do decembra, zaenkrat pa mi jih je uspelo zajeti 56. 
 Podatki teh oglasov so zapisani v csv in json datoteki.
