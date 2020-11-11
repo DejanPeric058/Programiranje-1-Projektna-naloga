@@ -17,4 +17,4 @@ Na podlagi teh podatkov nameravam preveriti:
 * Katera vrsta del v določenih regijah prevladujejo?
 
 Zaradi omejitve strani, da lahko pregledam samo 30 podrobnosti oglasov, jih bom zajemal do decembra, zaenkrat pa mi jih je uspelo zajeti 56. 
-Podatki teh oglasov so zapisani v csv in json datoteki.
+Podatki teh oglasov so zapisani v csv in json datoteki. V reporzitoriju je tudi datoteka prijava.py, s pomočjo katere lahko pobiram podatke s strani, na katerih moram biti prijavljen.
