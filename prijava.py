@@ -6,9 +6,14 @@ def uvozi_html(url):
     session = requests.Session()
 
     # Create the payload
-    payload = {'username':'email', 
-            'password':'willchangeit'
+    
+    
+    
+    payload = {'username':'', 
+            'password':''
             }
+
+
 
     # Post the payload to the site to log in
     s = session.post("https://www.studentski-servis.com/ess/login.php", data=payload)

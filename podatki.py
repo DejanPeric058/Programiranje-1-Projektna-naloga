@@ -2,6 +2,7 @@ import re
 import pandas as pd
 import orodja
 import requests
+import os
 
 URL = 'https://www.studentski-servis.com/index.php?t=prostaDela&page=1&perPage=1000&podjetje=&sort=1&workType=1&keyword=&urnaPostavkaMin=4.56&urnaPostavkaMax=20.00'
 
@@ -37,10 +38,14 @@ def izloci_podatke_oglasa(vsebina):
     oglas = vzorec_podrobnosti.search(vsebina).groupdict()
     return oglas
 
-orodja.shrani_spletno_stran(URL, 'zajeti-podatki/prosta-dela.html')
-vsebina = orodja.vsebina_datoteke('zajeti-podatki/prosta-dela.html')
+#orodja.shrani_spletno_stran(URL, 'zajeti-podatki/prosta-dela.html')
+#vsebina = orodja.vsebina_datoteke('zajeti-podatki/prosta-dela.html')
 #sifre = re.findall(vzorec_sifre, vsebina, flags=re.DOTALL)
-sifre = ['326859', '326855', '326854', '326853', '326852', '326851', '326850', '326849', '326845', '326842', '326841', '326840', '326839', '326838', '326837', '326836', '326834', '326832', '326830', '326829', '326828', '326827', '326826', '326824', '326823', '326822', '326820', '326819', '326818', '326817', '326814', '326812', '326810', '326809', '326808', '326807', '326804', '326803', '326802', '326799', '326798', '326796', '326795', '326792', '326791', '326790', '326789', '326788', '326787', '326785', '326780', '326778', '326777', '326776', '326775', '326774']
+
+sifre = []
+
+for datoteka in os.listdir('zajeti-podatki'):
+    sifre.append(datoteka[19:25])
 
 oglasi = []
 

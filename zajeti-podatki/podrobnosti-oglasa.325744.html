@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="sl">
+ <head>
+  <title>
+   E-poslovalnica
+  </title>
+  <link href="/favicon.ico" rel="shortcut icon"/>
+  <link href="/favicon.ico" rel="icon"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="Testni podatek" name="description"/>
+  <meta content="Creatim RP" name="author"/>
+  <meta content="all" name="robots"/>
+  <meta content="device-width=device-width" name="viewport">
+   <meta content="user-scalable=yes" name="viewport">
+    <meta content="initial-scale=1" name="viewport">
+     <link href="resources/less/main.less.php?v=20200901001" media="all" rel="stylesheet/less" type="text/css"/>
+     <link href="resources/css/print.css?v=20200901001" media="print" rel="stylesheet" type="text/css"/>
+     <link href="resources/css/chosen.css?v=20200901001" media="screen" rel="stylesheet" type="text/css"/>
+     <link href="resources/css/prettyPhoto.css?v=20200901001" media="screen" rel="stylesheet" type="text/css"/>
+     <link href="resources/css/featherlight.min.css?v=20200901001" media="screen" rel="stylesheet" type="text/css"/>
+     <link href="resources/css/multiple-select.css?v=20200901001" media="screen" rel="stylesheet" type="text/css"/>
+     <link href="resources/css/candlestick.min.css?v=20200901001" media="screen" rel="stylesheet" type="text/css">
+      <script src="resources/js/jquery-1.9.1.min.js?v=20200901001">
+      </script>
+      <script src="resources/js/jquery-ui.min.js?v=20200901001">
+      </script>
+      <script type="text/javascript">
+       //var less=less||{};less.env='development';
+      </script>
+      <script src="resources/js/less.js?v=20200901001">
+      </script>
+      <script src="resources/js/chosen.jquery.min.js?v=20200901001">
+      </script>
+      <script src="resources/js/jquery.multiple.select.js?v=20200901001">
+      </script>
+      <script src="resources/js/jquery.matchheight.min.js?v=20200901001">
+      </script>
+      <script src="resources/js/main.js?v=20200901001" type="text/javascript">
+      </script>
+      <script src="resources/js/mmenu.js?v=20200901001" type="text/javascript">
+      </script>
+      <script src="resources/js/jquery.history.js?v=20200901001" type="text/javascript">
+      </script>
+      <script src="resources/js/os.js?v=20200901001" type="text/javascript">
+      </script>
+      <script src="resources/js/jquery.prettyPhoto.js?v=20200901001" type="text/javascript">
+      </script>
+      <script src="resources/uploader/SimpleAjaxUploader.js?v=20200901001" type="text/javascript">
+      </script>
+      <script src="resources/js/featherlight.min.js?v=20200901001" type="text/javascript">
+      </script>
+      <script src="resources/js/nouislider.min.js?v=20200901001" type="text/javascript">
+      </script>
+      <script src="resources/js/wNumb.min.js?v=20200901001" type="text/javascript">
+      </script>
+      <script src="resources/js/candlestick.js?v=20200901001" type="text/javascript">
+      </script>
+      <script src="resources/js/hammer.min.js?v=20200901001" type="text/javascript">
+      </script>
+      <script src="resources/js/jquery.hammer.js?v=20200901001" type="text/javascript">
+      </script>
+      <!--[if lte IE 10]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<![endif]-->
+      <!--[if IE 9]>
+	<style type="text/css" media="all">@import url(css/ie9.css);</style>
+<![endif]-->
+      <!--[if lte IE 8]>
+	<script type="text/javascript" src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<style type="text/css" media="all">@import url(css/ie8.css);</style>
+<![endif]-->
+      <!--[if lte IE 7]>
+	<style type="text/css" media="all">@import url(css/ie6.css);</style>
+	<script src="resources/js/ie6.js" type="text/javascript"></script> 
+<![endif]-->
+     </link>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body class="responsive &lt;!--menuActive--&gt;" id="frontPage" style="background-image : url(profilephoto.php?l=2);">
+  <div>
+   <div class="siteShadow rp960">
+    <header class="header">
+     <div class="headerWrap">
+      <h3 class="pageTitle" itemscope="" itemtype="http://schema.org/Corporation">
+       <a class="url" href="osebna_stran.php" itemprop="url" rel="home" title="Na prvo stran">
+        <img alt="Logo Študentski servis" class="logo" itemprop="image" src="resources/images/logos/logo_studentski_servis.png"/>
+        <img alt="Osebni servis" class="osebniServis" itemprop="image" src="resources/images/logos/logo_osebni_servis.png"/>
+        <span class="brand" itemprop="brand">
+         Študentski servis
+        </span>
+        <span id="strapline" itemprop="description">
+         Agencija za izvajanje dejavnosti posredovanja dela
+        </span>
+        <span class="fn org" itemprop="fn org">
+         ŠS d.o.o.
+        </span>
+       </a>
+      </h3>
+      <p class="forScreenReaders">
+       <a href="#content" title="Skip all links">
+        Skip to main content
+       </a>
+      </p>
+      <div class="navigation" itemscope="" itemtype="http://schema.org/WebSite" role="navigation">
+       <nav aria-label="main" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+        <ul>
+         <li aria-level="1" class="dropDown selected">
+          <a href="prosta_dela.php" rel="tag">
+           <span>
+            <small>
+             &gt;
+            </small>
+            Prosta dela
+           </span>
+          </a>
+          <div class="drop">
+           <div class="dropWrap">
+            <ul>
+             <li aria-level="2" class="selected">
+              <a href="prosta_dela.php">
+               <span>
+                Vsa prosta dela
+               </span>
+              </a>
+             </li>
+             <li aria-level="2">
+              <a href="moje_delo.php">
+               <span id="aktivniiskalcinaziv">
+                Delo za aktivne iskalce
+               </span>
+              </a>
+             </li>
+             <li aria-level="2">
+              <a href="prosta_dela.php?kosarica=1">
+               <span>
+                Izbor del
+               </span>
+              </a>
+             </li>
+             <li aria-level="2">
+              <a href="moje_izkusnje.php">
+               <span>
+                Moje izkušnje
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </li>
+         <li aria-level="1">
+          <a href="potrebujem_napotnico.php" rel="tag">
+           <span>
+            <small>
+             &gt;
+            </small>
+            Napotnice
+           </span>
+          </a>
+          <div class="drop">
+           <div class="dropWrap">
+            <ul>
+             <li aria-level="2">
+              <a href="izdane_napotnice.php">
+               <span>
+                Izdane napotnice
+               </span>
+              </a>
+             </li>
+             <li aria-level="2">
+              <a href="potrebujem_napotnico.php">
+               <span>
+                Naročilo nove napotnice
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </li>
+         <li aria-level="1">
+          <a href="pregled_zasluzkov.php" rel="tag">
+           <span>
+            <small>
+             &gt;
+            </small>
+            Zaslužki
+           </span>
+          </a>
+          <div class="drop">
+           <div class="dropWrap">
+            <ul>
+             <li aria-level="2">
+              <a href="pregled_zasluzkov.php">
+               <span>
+                Pregled zaslužkov
+               </span>
+              </a>
+             </li>
+             <li aria-level="2">
+              <a href="pokojninska_doba.php">
+               <span>
+                Pokojninska doba
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </li>
+         <li aria-level="1">
+          <a href="dohodnina_letno_obvestilo.php" rel="tag">
+           <span>
+            <small>
+             &gt;
+            </small>
+            Dohodnina
+           </span>
+          </a>
+          <div class="drop">
+           <div class="dropWrap">
+            <ul>
+             <li aria-level="2">
+              <a href="dohodnina_pogosta_vprasanja.php">
+               <span>
+                Pogosta vprašanja
+               </span>
+              </a>
+             </li>
+             <li aria-level="2">
+              <a href="dohodnina_letno_obvestilo.php">
+               <span>
+                Obvestilo o letnem zaslužku
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </li>
+         <li aria-level="1">
+          <a href="popusti.php" rel="tag">
+           <span>
+            <small>
+             &gt;
+            </small>
+            Ugodnosti
+           </span>
+          </a>
+          <div class="drop">
+           <div class="dropWrap">
+            <ul>
+             <li aria-level="2">
+              <a href="popusti.php">
+               <span>
+                Popusti
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </li>
+         <li aria-level="1">
+          <a href="faq.php" rel="tag">
+           <span>
+            <small>
+             &gt;
+            </small>
+            Pomoč
+           </span>
+          </a>
+          <div class="drop">
+           <div class="dropWrap">
+            <ul>
+             <li aria-level="2">
+              <a href="faq.php">
+               <span>
+                Pogosta vprašanja
+               </span>
+              </a>
+             </li>
+             <li aria-level="2">
+              <a href="pravna_svetovalnica.php">
+               <span>
+                Zastavi vprašanje
+               </span>
+              </a>
+             </li>
+             <li aria-level="2">
+              <a href="pravna_svetovalnica.php?p=pip">
+               <span>
+                Pohvale in kritike
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </li>
+         <li aria-level="1" class="">
+          <a href="neplacniki.php">
+           <span>
+            Neplačniki
+           </span>
+          </a>
+         </li>
+         <li aria-level="1" class="">
+          <a href="http://www.studentski-servis.com/studenti/poslovalnice" target="_blank">
+           <span>
+            Poslovalnice
+           </span>
+          </a>
+         </li>
+        </ul>
+       </nav>
+      </div>
+      <div class="rightMenu">
+       <ul>
+        <li class="userDrop" style="padding: 5px; color:#ffffff;">
+         <span class="button bRound">
+          <span>
+           <img alt="" id="profilephoto2" src="profilephoto.php"/>
+          </span>
+         </span>
+         <div style="float: right; font-size: 1.3em; padding-left: 4px">
+          <b>
+           uporabnik
+          </b>
+          <br/>
+          <div style="max-width: 60%; float: left;">
+           <a href="nastavitve.php">
+            Nastavitve
+           </a>
+          </div>
+          <div style="float: right; padding-left: 20px;">
+           <a href="odjava.php">
+            Odjava
+           </a>
+          </div>
+         </div>
+        </li>
+        <li class="switchTheme">
+         <a class="iconHome btnPodjetja" href="http://www.studentski-servis.com/studenti/" target="_blank" title="Domov">
+          <i class="fa fa-home">
+          </i>
+          <span>
+           Stran za študente
+          </span>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </header>
+    <div class="modal" id="prijava_modal" style="display: none;">
+     <div class="modal-dialog">
+      <i aria-hidden="true" class="fa fa-times" id="modalclose">
+      </i>
+      <div class="modal-content">
+       <h3>
+        Prijava na delovno mesto
+       </h3>
+       <p>
+        Izpolni obrazec in se prijavi na delo. Tvoja prijava bo poslana podjetju. Svetujemo ti, da napišeš kratko
+        <a href="https://www.studentski-servis.com/kariera/spremno-pismo" target="_blank">
+         spremno pismo
+        </a>
+        in po potrebi priložiš svoj
+        <a href="https://www.studentski-servis.com/studenti/kariera/zivljenjepis" target="_blank">
+         življenjepis
+        </a>
+        . Kopijo prijave boš prejel/a na svoj e-mail.
+       </p>
+       <br/>
+       <form id="prijavaform" method="post" name="priajavanadelo">
+        <div id="files" style="display: none;">
+         <input id="file1" name="file1" type="file"/>
+         <input id="file2" name="file2" type="file"/>
+         <input id="file3" name="file3" type="file"/>
+        </div>
+        <input name="id" type="hidden" value="325744"/>
+        <input id="odg" name="odg" type="hidden" value=""/>
+        <fieldset class="box noLegend">
+         <legend>
+          Forma za prijavo na delo
+         </legend>
+         <p class="textareaType">
+          <label class="selectType" for="">
+           Kontakt podjetja:
+          </label>
+          <span style="margin-left: 10px;">
+           <a class="__cf_email__" data-cfemail="60130102090e014e010c09080f041a090320100f1314014e1309" href="/cdn-cgi/l/email-protection">
+            [email protected]
+           </a>
+          </span>
+         </p>
+         <p class="textareaType">
+          <label class="selectType" for="">
+           Sporočilo podjetju:
+          </label>
+          <textarea class="textareaType" id="" maxlength="400" name="besedilo" rows="5"></textarea>
+         </p>
+         <p class="textareaType">
+          <label class="selectType" for="">
+           Tvoja telefonska številka:
+          </label>
+          <input class="textareaType" id="" name="prijavatelefon" style="margin-left: 10px; border-style: solid; border-width: 1px;border-color: #e2e2e2;" type="text" value="031-230-732"/>
+          <span class="newLine">
+           Podjetje bo uporabilo številko za namen kadrovanja.
+          </span>
+         </p>
+         <h4 class="" id="sizetoobig" style="display: none; color:#ff0000;">
+         </h4>
+         <p class="textareaType">
+          <label class="selectType" for="">
+           Priponke:
+          </label>
+          <a class="formLinkType" href="#" id="uploadBtn" style="height: 10px; z-index:100;" tabindex="9">
+           <i class="fa fa-plus-circle" style="z-index:100;">
+           </i>
+           <span>
+            Naloži dokument
+           </span>
+          </a>
+          <span class="newLine" id="datoteke">
+          </span>
+          <span class="newLine">
+           Dovoljeni tipi: .doc, .docx, .pdf
+           <br/>
+           Dodaš lahko največ 3 datoteke.
+          </span>
+         </p>
+         <p class="textType">
+          <span class="label">
+          </span>
+          <input class="submitType button button1 bBig noBorder mLeft" id="posljiBtn" type="submit" value="Pošlji"/>
+         </p>
+         <h3 class="" id="poslano" style="display: none;">
+          <span class="label">
+          </span>
+          Tvoja prijava je bila poslana.
+         </h3>
+         <!--p class="requiredField">
+
+                            <span class="label"></span>
+
+                            <span>Polja označena z * so obvezna.</span>
+
+                        </p-->
+        </fieldset>
+       </form>
+      </div>
+     </div>
+    </div>
+    <div class="jobs" id="content">
+     <div class="contentWrap rp960">
+      <div class="bgContent jobSearch">
+       <div class="clear oneCol">
+        <section class="content" role="main">
+         <div class="cols cols2 titleBox">
+          <div class="colsWrap">
+           <div class="col">
+            <h1 class="title">
+             Podrobnosti dela
+            </h1>
+           </div>
+           <div class="col">
+            <div class="topButtons clear">
+             <a class="button button6" href="prosta_dela.php">
+              <span>
+               Prosta dela
+              </span>
+             </a>
+             <a class="button button6" href="moje_delo.php">
+              <span>
+               Tvoja dela
+              </span>
+             </a>
+             <a class="button button6" href="prosta_dela.php?kosarica=1">
+              <span count-data="0" id="stevecizbor">
+               <i class="fa fa-star">
+               </i>
+               Izbor del
+              </span>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+         <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwbhwG477375_8HV8L3Qb1c5VUO6QrlBE"></script>-->
+         <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+         </script>
+         <script type="text/javascript">
+          /*function drawmap(loc) {
+		var mapOptions = {
+			zoom: 11,
+			center: loc[0].geometry.location
+		}
+		var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+		var marker = new google.maps.Marker({
+			map: map, 
+			position: loc[0].geometry.location
+		});	
+	}*/
+
+	/*unction initialize() {
+		geocoder = new google.maps.Geocoder();
+		address='LITIJA###POŠTA 1270 LITIJA###POŠTA SLOVENIJE D.O.O.';		
+		address_parts=address.split("###");
+		var addresses=[];
+		for (i=1;i<=address_parts.length;i++) {
+			var partial_address=[];
+			for (j=1;j<=address_parts.length-i+1;j++) {
+				partial_address.push(address_parts[j-1]);
+			}
+			addresses.push(partial_address.join(", "));
+		}
+		
+		addr=addresses[1-1];
+		geocoder.geocode({'address': addr}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+				drawmap(results);
+			} else if (addresses.length>=2) {
+				addr=addresses[2-1];
+				geocoder.geocode({'address': addr}, function(results, status) {
+					if (status == google.maps.GeocoderStatus.OK) {
+						drawmap(results);
+					} else if (addresses.length>=3) {
+						addr=addresses[3-1];
+						geocoder.geocode({'address': addr}, function(results, status) {
+							if (status == google.maps.GeocoderStatus.OK) {
+								drawmap(results);
+							}
+						});
+					}
+				});
+			}
+		});
+	}*/
+	//google.maps.event.addDomListener(window, 'load', initialize);
+         </script>
+         <div class="container">
+          <div style="text-align: center;">
+           <h3>
+            Želiš, da te o delu, ki te zanima
+            <br/>
+            obvestimo prek SMS-a ali e-maila?
+            <br/>
+            <br/>
+            <a class="button button2" href="moja_dela.php" style="background-color: #d85c45;">
+             <span>
+              ŽELIM BITI OBVEŠČEN/A
+             </span>
+            </a>
+            <br/>
+            <br/>
+           </h3>
+          </div>
+          <div class="cols cols2 blockGrid space30 details">
+           <div class="colsWrap">
+            <div class="col">
+             <div class="box boxWhite equalHeights" id="boxpodr">
+              <h3 class="title linkTitle">
+               Podatki o delu
+               <div class="links">
+                <a class="iconLink blue addToCart" href="#" link-data="dodajvkosarico.php?id=325744">
+                 <i class="fa fa-star-o">
+                 </i>
+                 <span>
+                  <strong>
+                   Dodaj v izbor del
+                  </strong>
+                 </span>
+                </a>
+                <a class="companyJobs" href="prosta_dela.php?isci=1&amp;kljb=">
+                 <i aria-hidden="true" class="fa fa-sticky-note-o">
+                 </i>
+                 <strong>
+                  <span>
+                   Vsi oglasi tega podjetja
+                  </span>
+                 </strong>
+                </a>
+               </div>
+              </h3>
+              <table class="noCaption dataTable bottomBorder">
+               <caption>
+                Prikaz članskih podatkov
+               </caption>
+               <tbody>
+                <tr class="noBorder">
+                 <td class="tdData" style="width : 30%;">
+                  <strong>
+                   Delo:
+                  </strong>
+                 </td>
+                 <td class="tdDataMain">
+                  PISMONOŠA
+                 </td>
+                </tr>
+                <tr class="noBorder">
+                 <td class="tdData">
+                  <strong>
+                   Kraj / Regija:
+                  </strong>
+                 </td>
+                 <td class="tdDataMain">
+                  LITIJA
+                  <br/>
+                  (LJUBLJANA Z OKOLICO)
+                 </td>
+                </tr>
+                <tr class="noBorder">
+                 <td class="tdData">
+                  <strong>
+                   Plačilo:
+                  </strong>
+                 </td>
+                 <td class="tdDataMain">
+                  4.56 EUR/h NETO, 5.40 EUR/h BRUTO
+                 </td>
+                </tr>
+                <tr>
+                 <td class="tdData">
+                  <strong>
+                   Lokal:
+                  </strong>
+                 </td>
+                 <td class="tdDataMain">
+                  <b>
+                   POŠTA SLOVENIJE
+                  </b>
+                 </td>
+                </tr>
+                <tr class="noBorder">
+                 <td colspan="2">
+                 </td>
+                </tr>
+                <tr>
+                 <td class="tdData">
+                  Naslov:
+                 </td>
+                 <!--<td class="tdData" onclick="$('#map-canvas').height('250px'); $('#boxpodr').height($('#boxpodr').height()+250); initialize();" style="cursor: pointer; text-decoration: underline;">POŠTA 1270 LITIJA</td>-->
+                 <td class="tdData" style="">
+                  POŠTA 1270 LITIJA
+                 </td>
+                </tr>
+                <tr>
+                 <td class="tdData">
+                  Datum pričetka:
+                 </td>
+                 <td class="tdData">
+                  14.11.2020
+                 </td>
+                </tr>
+                <tr>
+                 <td class="tdData">
+                  Delovnik:
+                 </td>
+                 <td class="tdData">
+                  DOPOLDAN
+                 </td>
+                </tr>
+                <tr>
+                 <td class="tdData">
+                  Št. članov:
+                 </td>
+                 <td class="tdData">
+                  1
+                 </td>
+                </tr>
+                <tr>
+                 <td class="tdData">
+                  Trajanje:
+                 </td>
+                 <td class="tdData">
+                  PO DOGOVORU
+                 </td>
+                </tr>
+                <tr>
+                 <td class="tdData">
+                  Šifra oglasa:
+                 </td>
+                 <td class="tdData">
+                  325744
+                 </td>
+                </tr>
+                <tr>
+                 <td class="tdData" colspan="2">
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <br/>
+              <br/>
+              <p class="noBottomMargin">
+               <strong>
+                Opis:
+               </strong>
+              </p>
+              <p>
+               Dostava pošiljk. Pogoja sta polnoletnost in komunikativnost.
+              </p>
+              <div id="map-canvas" style="height: 10px;">
+              </div>
+              <div id="map">
+              </div>
+             </div>
+            </div>
+            <div class="col">
+             <div class="equalHeights">
+              <div class="box profileData sMargin">
+               <h5>
+                1) Se želiš prijaviti na delovno mesto?
+               </h5>
+               <br/>
+               <table class="noCaption simpleTable" style="margin: 0">
+                <caption>
+                 Prikaz kontaktnih podatkov podjetja
+                </caption>
+                <tbody>
+                 <tr>
+                  <td class="tdData">
+                   <strong>
+                    Podjetje:
+                   </strong>
+                  </td>
+                  <td class="tdData">
+                   POŠTA SLOVENIJE D.O.O.
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="tdData">
+                   <strong>
+                    Kontaktna oseba:
+                   </strong>
+                  </td>
+                  <td class="tdData">
+                   SABINA ALIHODŽIĆ
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <p class="detailActionBox" style="margin: 0 0 2em">
+                <a class="button button1 bBig noBorder" href="#" id="prijava_delo" style="">
+                 <span>
+                  Obrazec za prijavo
+                 </span>
+                </a>
+               </p>
+               <p class="detailActionLinksBox blue">
+                <span>
+                 <a class="iconLink" href="#" link-data="reveal.php?id=325744&amp;reveal=1&amp;type=E">
+                  <i class="fa fa-envelope-o">
+                  </i>
+                  <span>
+                   <strong>
+                    Pokaži e-mail
+                   </strong>
+                  </span>
+                 </a>
+                </span>
+                <span>
+                 <a class="iconLink" href="#" link-data="reveal.php?id=325744&amp;reveal=1&amp;type=T">
+                  <i class="fa fa-mobile">
+                  </i>
+                  <span>
+                   <strong>
+                    Pokaži telefon
+                   </strong>
+                  </span>
+                 </a>
+                </span>
+               </p>
+              </div>
+              <div class="box profileData">
+               <h5>
+                2) Si se s podjetjem že dogovoril/a za delo?
+               </h5>
+               <br/>
+               <p class="detailActionBox">
+                <a class="button button1 bBig noBorder" href="potrebujem_napotnico.php?ac=1">
+                 <span>
+                  Naroči napotnico
+                 </span>
+                </a>
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+       </div>
+      </div>
+     </div>
+    </div>
+    <footer class="footer" role="contentinfo">
+     <div class="footerWrap clear">
+      <div class="copyrights left">
+       <p class="logos">
+       </p>
+       <p class="company">
+        © ŠS d.o.o
+       </p>
+       <p class="links">
+        <a href="http://www.studentski-servis.com/pogoji-poslovanja" target="_blank">
+         Pravna obvestila
+        </a>
+        <small>
+         |
+        </small>
+        <a href="https://www.studentski-servis.com/resources/files/pdf/Politika_zasebnosti_in_varstvo_osebnih_podatkov.pdf" target="_blank">
+         Politika zasebnosti
+        </a>
+        <a href="http://www.studentski-servis.com/piskotki" target="_blank">
+         Piškotki
+        </a>
+        <a href="http://www.studentski-servis.com/studentsko-delo" target="_blank">
+         Za medije
+        </a>
+        <small>
+         |
+        </small>
+        <span id="responsiveOnOff">
+         <a href="" title="Izklopi širjenje strani">
+          <span>
+           Izklopi širjenje strani
+          </span>
+         </a>
+        </span>
+        <small>
+         |
+        </small>
+        <a class="iconFacebook" href="https://sl-si.facebook.com/e.studentski" target="_blank">
+         Spremljaj nas na Facebook-u
+        </a>
+       </p>
+      </div>
+      <div class="right">
+       <p class="production">
+        Produkcija:
+        <a href="#">
+         Creatim Ržišnik Perc
+        </a>
+       </p>
+      </div>
+     </div>
+    </footer>
+   </div>
+   <div class="mobileMenu">
+    <div class="rp960">
+     <ul>
+      <li>
+       <a href="nastavitve.php">
+        <i class="fa fa-user">
+        </i>
+        <!--<i class="fa fa-close"></i>-->
+        <small>
+        </small>
+        <span>
+         Moj profil
+        </span>
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        <i class="fa fa-bars">
+        </i>
+        <!--<i class="fa fa-close"></i>-->
+        <small>
+        </small>
+        <span>
+         Odpri menu
+        </span>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="mobileMenuBottom">
+    <div class="cols cols4 space1">
+     <ul>
+      <li>
+       <a href="potrebujem_napotnico.php">
+        <i class="fa fa-file-text-o">
+        </i>
+        <span>
+         Nova
+         <br>
+          napotnica
+         </br>
+        </span>
+       </a>
+      </li>
+      <li>
+       <a href="moje_delo.php">
+        <i class="fa fa-tag">
+        </i>
+        <span>
+         Tvoja
+         <br>
+          dela
+         </br>
+        </span>
+       </a>
+      </li>
+      <li>
+       <a href="pregled_zasluzkov.php">
+        <i class="fa fa-money">
+        </i>
+        <span>
+         Pregled
+         <br/>
+         zaslužkov
+        </span>
+       </a>
+      </li>
+      <li>
+       <a href="prosta_dela.php?kosarica=1">
+        <i class="fa fa-star">
+        </i>
+        <span>
+         Izbor
+         <br/>
+         del
+        </span>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   var __turnOnResponsive = 'Vklopi širjenje strani';
+	var __turnOffResponsive = 'Izklopi širjenje strani';
+  </script>
+ </body>
+</html>
