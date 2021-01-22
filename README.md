@@ -20,5 +20,5 @@ V datoteki oglasi.csv so shranjeni podatki o oglasih. Zajel sem podatke: delo, k
 
 Za zajem podrobnosti oglasov sem najprej iz osnovne strani zajel vse šifre oglasov, prek katerih sem se potem zapeljal za pridobitev podatkov s spletnih strani o podrobnostih oglasov.
 
-Zaradi omejitve strani, da lahko pregledam samo 30 podrobnosti oglasov, jih bom zajemal do decembra, zaenkrat pa mi jih je uspelo zajeti 56. 
+Uspelo mi je zajeti 751 oglasov za razpoložljiva študentska dela. 
 Podatki teh oglasov so zapisani v csv in json datoteki. V reporzitoriju je tudi datoteka prijava.py, s pomočjo katere lahko pobiram podatke s strani, na katerih moram biti prijavljen.
