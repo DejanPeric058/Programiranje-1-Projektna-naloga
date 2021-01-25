@@ -16,7 +16,7 @@ Na podlagi teh podatkov nameravam preveriti:
 * Kakšen je najpogostejši tip delovnika?
 * Katera vrsta del v določenih regijah prevladujejo?
 
-V datoteki oglasi.csv so shranjeni podatki o oglasih. Zajel sem podatke: delo, kraj, regija, plačilo(neto in bruto oz. po dogovoru, naslov, datum pričetka, delovnik, število članov(število iskanih študentov za delo), šifra, opis in ime podjetja, ki ponuja delo.
+V datoteki oglasi.csv so shranjeni podatki o oglasih. Zajel sem podatke: delo, kraj, regija, plačilo(neto in bruto oz. po dogovoru), naslov, datum pričetka, delovnik, število članov(število iskanih študentov za delo), šifra, opis in ime podjetja, ki ponuja delo.
 
 Za zajem podrobnosti oglasov sem najprej iz osnovne strani zajel vse šifre oglasov, prek katerih sem se potem zapeljal za pridobitev podatkov s spletnih strani o podrobnostih oglasov.
 
