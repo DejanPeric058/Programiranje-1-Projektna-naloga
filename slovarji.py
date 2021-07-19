@@ -1,9 +1,9 @@
 import orodja
 import re
 
-#URL = 'https://www.studentski-servis.com/studenti/prosta-dela/'
+URL = 'https://www.studentski-servis.com/studenti/prosta-dela/'
 
-#orodja.shrani_spletno_stran(URL, 'osnovna_spletna_stran.html')
+orodja.shrani_spletno_stran(URL, 'osnovna_spletna_stran.html')
 
 with open('osnovna_spletna_stran.html',encoding='utf-8') as f:
     html = f.read()
@@ -19,13 +19,20 @@ vzorec_blok = re.compile(
 )
 
 vrsta_del = vzorec_blok.findall(html)
+vrsta_del = [x.upper() for x in vrsta_del]
 slovar_del ={}
 for blok in vzorec_blok.finditer(html):
     delo = vzorec.findall(blok.group(0))
+    delo = [x.upper() for x in delo]
     vrsta_dela = vrsta_del[0]
     slovar_del[vrsta_dela] = delo
     vrsta_del = vrsta_del[1:]
-print(slovar_del)
+slovar_del['STROKOVNA DELA'].append("UREJANJE DRUŽ. OMREŽIJ (FB,IN,TW)")
+#print(slovar_del)
 
-
+osrednjeslovenska = ['LJUBLJANA Z OKOLICO', 'DOMŽALE-KAMNIK', 'GROSUPLJE Z OKOLICO', 'VRHNIKA Z OKOLICO']
+podravska = ['MARIBOR Z OKOLICO', 'PTUJ Z OKOLICO']
+gorenjska = ['KRANJ Z OKOLICO', 'ŠKOFJA LOKA Z OKOLICO', 'RADOVLJICA Z OKOLICO', 'JESENICE Z OKOLICO']
+obalnokraška = ['KOPER Z OKOLICO', 'IZOLA Z OKOLICO', 'PIRAN Z OKOLICO']
+regije = {'OSREDNJESLOVENSKA': osrednjeslovenska, 'PODRAVSKA': podravska, 'GORENJSKA': gorenjska, 'OBALNOKRAŠKA': obalnokraška}
            
