@@ -13,8 +13,9 @@ Zajel bom naslednje podatke:
 
 Na podlagi teh podatkov nameravam preveriti:
 * V kateri regiji so ponujena študentska dela povprečno najbolje plačana in kje najslabše?
-* Kakšen je najpogostejši tip delovnika?
-* Katera vrsta del v določenih regijah prevladujejo?
+* Kje je največ prostih študentskih del in kje najmanj?
+* Programiranje je najbolje plačano študentsko delo.
+* Katero je povprečno najslabše plačano delo?
 
 V datoteki oglasi.csv so shranjeni podatki o oglasih. Zajel sem podatke: delo, kraj, regija, plačilo(neto in bruto oz. po dogovoru), naslov, datum pričetka, delovnik, število članov(število iskanih študentov za delo), šifra, opis in ime podjetja, ki ponuja delo.
 
