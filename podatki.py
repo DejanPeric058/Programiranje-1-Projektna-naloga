@@ -25,6 +25,7 @@ vzorec_podrobnosti = re.compile(
 )
 
 def podrobnosti(sifra):
+    '''Shrani oglas z dano šifro, prebere vsebino danega oglasa in naredi slovar glede na zgornji vzorec s pomočjo regularnih izrazov.'''
     url = (
         f'https://www.studentski-servis.com'
         f'/ess/podrobnosti.php?id={sifra}'
@@ -35,6 +36,7 @@ def podrobnosti(sifra):
     return izloci_podatke_oglasa(vsebina)
 
 def izloci_podatke_oglasa(vsebina):
+    '''Naredi slovar glede na zgornji vzorec s pomočjo regularnih izrazov.'''
     oglas = vzorec_podrobnosti.search(vsebina).groupdict()
     return oglas
 
@@ -60,3 +62,4 @@ orodja.zapisi_csv(
 
 print(len(sifre))
 print(len(oglasi))
+

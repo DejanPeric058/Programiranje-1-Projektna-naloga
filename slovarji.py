@@ -1,11 +1,15 @@
 import orodja
 import re
 
+# V tej python datoteki iz osnovne spletne strani zajamemo vsebino in naredimo slovar_del, 
+# ki sporoča, katera dela spadajo pod določeno vrsto del. Analogno za slovar_regij, ki pa je 
+# prepisan na roke.
+
 URL = 'https://www.studentski-servis.com/studenti/prosta-dela/'
 
-orodja.shrani_spletno_stran(URL, 'osnovna_spletna_stran.html')
+#orodja.shrani_spletno_stran(URL, 'zajeti-podatki/osnovna_spletna_stran.html')
 
-with open('osnovna_spletna_stran.html',encoding='utf-8') as f:
+with open('zajeti-podatki/osnovna_spletna_stran.html',encoding='utf-8') as f:
     html = f.read()
 
 vzorec = re.compile(
@@ -34,5 +38,5 @@ osrednjeslovenska = ['LJUBLJANA Z OKOLICO', 'DOMŽALE-KAMNIK', 'GROSUPLJE Z OKOL
 podravska = ['MARIBOR Z OKOLICO', 'PTUJ Z OKOLICO']
 gorenjska = ['KRANJ Z OKOLICO', 'ŠKOFJA LOKA Z OKOLICO', 'RADOVLJICA Z OKOLICO', 'JESENICE Z OKOLICO']
 obalnokraška = ['KOPER Z OKOLICO', 'IZOLA Z OKOLICO', 'PIRAN Z OKOLICO']
-regije = {'OSREDNJESLOVENSKA': osrednjeslovenska, 'PODRAVSKA': podravska, 'GORENJSKA': gorenjska, 'OBALNOKRAŠKA': obalnokraška}
+slovar_regij = {'OSREDNJESLOVENSKA': osrednjeslovenska, 'PODRAVSKA': podravska, 'GORENJSKA': gorenjska, 'OBALNOKRAŠKA': obalnokraška}
            

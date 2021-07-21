@@ -1,7 +1,11 @@
 from bs4 import BeautifulSoup
 import requests
 
+# Spletna stran je zahtevala prijavo uporabnika. To težavo sem rešil s knjižnico BeautifulSoup 
+# in funkcijo uvozi_html. 
+
 def uvozi_html(url):
+    '''Vrne html spletne strani, na kateri se je treba prijaviti z uporabniškim imenom in geslom.'''    
     # Start the session
     session = requests.Session()
 
